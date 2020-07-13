@@ -53,7 +53,7 @@ def beam(lC1, lC2, wi, hC1, hC2):
     for w in omega:
       eq1= periodic_beam(w, E, Ia, La, Aa, rho) 
       eq2 = periodic_beam(w, E ,Ib, Lb, Ab,rho)
-      Tfinal = eq1 * eq1 * eq1 * eq1 * eq1* eq2 * eq2*eq2*eq2*eq2
+      Tfinal = eq1@eq1@ eq1 @ eq1 @ eq1@ eq2 @ eq2@eq2@eq2@eq2
       eig_final = np.linalg.eigvals(Tfinal)
       eig_final = np.sort(eig_final)
       final[i] = eig_final
