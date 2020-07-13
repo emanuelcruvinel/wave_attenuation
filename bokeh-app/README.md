@@ -4,4 +4,4 @@ graph of the temperatures, but a smoothed representation can be selected.
 
 To run the script, execute:
 
-    bokeh serve --show weather/
+    bokeh serve --show sliders2/
